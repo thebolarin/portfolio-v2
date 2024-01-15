@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moses Odutusin</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mobile-nav.css">
+    <link rel="stylesheet" href="css/career.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <header class="desktop-header">
+                <div class="logo">
+                    <p>theBolarin.</p>
+                </div>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/project.html">Projects</a>
+                    <a href="/career.html" class="focus">Career</a>
+                    <a href="/education.html">Education</a>
+                    <a href="/testimonial.html">Testimonial</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+            </header>
+
+            <header class="mobile-header">
+                <nav class="navbar">
+                    <!-- <div class="container"> -->
+                    <div class="brand">
+                        <h1>theBolarin.</h1>
+                    </div>
+                    <div class="toggle">
+                        <span class="toggle-btn"></span>
+                    </div>
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="/" class="menu-link">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/project.html" class="menu-link">Projects</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/career.html" class="menu-link">Career</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/education.html" class="menu-link">Education</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/testimonial.html" class="menu-link">Testimonial</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/contact.html" class="menu-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </nav>
+            </header>
+
+            <section class="career">
+                <header>
+                    <h1>Professional History</h1>
+                </header>
+
+                <div class="career-item">
+                    <div class="list">
+                        <span class="circle"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Jan, 2023 - Present
+                        </p>
+                        <h2>
+                            Software Engineer - <span><a href="https://wpaintel.com/">WPA Intelligence</a></span>
+                        </h2>
+                        <ul>
+                            <li>
+                                Re-architected SMS and MMS texting by allowing the system to switch to multiple text
+                                providers, thereby reducing system downtime by
+                                70%.
+                            </li>
+                            <li>
+                                Built and maintained a Location Microservice(written in Rust) for canvassing and its
+                                GraphQL subscription.
+                            </li>
+                            <li>
+                                Implemented a complex data synchronisation and transfer system that uses multiple
+                                databases (MongoDB and SQL), caching (Redis), and
+                                background processing (using Nodejs worker threads) to handle large volumes of data
+                                efficiently. It also includes error handling and logging to provide robust data transfer
+                                capabilities and can be accessed by Kafka consumers and CLI reducing transfer time from
+                                6 hours to 45minutes following process review and improvement.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="career-item">
+                    <div class="list">
+                        <span class="circle"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Dec, 2021 - Dec,2023
+                        </p>
+                        <h2>
+                            Software Engineer - <span><a href="https://tix.africa/">Tix Africa</a></span>
+                        </h2>
+                        <ul>
+                            <li>
+                                Led backend team to build and launch a microservice that handles all payouts following
+                                process review and improvements..
+                            </li>
+                            <li>
+                                Presented and implemented an asynchronous communication with Google Pub/Sub increasing
+                                reliability and reducing data
+                                inconsistency and implementation time by as much as 60% team-wide.
+                            </li>
+                            <li>
+                                Led my team to upgrade a Ruby on Rails codebase which made the entirety of the system
+                                less vulnerable and increased performance.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>Copyright &#169; 2024. Moses Odutusin | Software & DevOps Engineer. All rights reserved.</p>
+                <p>odutusinmoses@gmail.com</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.education {
+  margin-top: 100px;
+    min-height: 580px;
+}
+/* 
+.education .section{
+    min-height: 350px;
+
+} */
+
+
+.education header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education header h1 {
+    font-size: 41px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    color:#668A85;
+}
+
+.education-item{
+    display: flex;
+    flex-flow: row;
+    margin-top: 80px;
+    /* align-items: flex-start; */
+    /* padding-bottom: 50px; */
+    margin-left: 50px;
+}
+
+/* .education-item .timeline .item:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .education-item .timeline .item:last-of-type .arrow .line {
+    display: none;
+  } */
+  .education-item .list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 30px;
+    padding-top: 2px;
+  }
+
+  .education-item .list .circle {
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: block;
+    background: rgb(10, 10, 10);
+    border-radius: 50%;
+  }
+
+  .education-item .list .line {
+    width: 5px;
+    min-height: 40px;
+    content: "";
+    border-left: solid 1.5px rgb(0, 0, 0);
+    flex-grow: 1;
+    margin-top: 15px;
+  }
+
+  .education-item .content{
+    width: 60%;
+  }
+
+  .education-item.content h2 a{
+    color: #668A85;
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+.education-item .content .relevant{
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+  .education-item .content ul li{
+    font-size: 17px;
+    line-height:30px;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 991px) {
+    .education{
+        margin-top: 130px;
+       }
+
+    .education-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .education-item .content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Moses Odutusin</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/splash.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/mobile-nav.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+</head>
+
+<body>
+
+  <main>
+    <div id="splash-screen">
+      <div class="animation-container">
+        <span class="splash-title">t</span>
+        <span class="splash-title">h</span>
+        <span class="splash-title">e</span>
+        <span class="splash-title">B</span>
+        <span class="splash-title">o</span>
+        <span class="splash-title">l</span>
+        <span class="splash-title">a</span>
+        <span class="splash-title">r</span>
+        <span class="splash-title">i</span>
+        <span class="splash-title">n</span>
+        <span class="splash-title">.</span>
+      </div>
+    </div>
+    <div class="container" id="main-content">
+      <header class="desktop-header">
+        <div class="logo">
+          <p>theBolarin.</p>
+        </div>
+        <nav>
+          <a href="/" class="focus">Home</a>
+          <a href="/project.html">Projects</a>
+          <a href="/career.html">Career</a>
+          <a href="/education.html">Education</a>
+          <a href="/testimonial.html">Testimonial</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <header class="mobile-header">
+        <nav class="navbar">
+          <div class="brand">
+            <h1>theBolarin.</h1>
+          </div>
+          <div class="toggle">
+            <span class="toggle-btn"></span>
+          </div>
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="/" class="menu-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="/project.html" class="menu-link">Projects</a>
+              </li>
+              <li class="menu-item">
+                <a href="/career.html" class="menu-link">Career</a>
+              </li>
+              <li class="menu-item">
+                <a href="/education.html" class="menu-link">Education</a>
+              </li>
+              <li class="menu-item">
+                <a href="/testimonial.html" class="menu-link">Testimonial</a>
+              </li>
+              <li class="menu-item">
+                <a href="/contact.html" class="menu-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="landing">
+        <div class="intro">
+          <h1>Software Engineer at Peak Capacity.</h1>
+          <p>
+            Hello! I'm <span class="fullname">Moses Odutusin</span>.
+            I'm a highly skilled and experienced Software & DevOps engineer with a
+            passion for using technology to solve complex problems. I have a deep
+            understanding of the tools and techniques used in the field of Software engineering
+            and DevOps, and i'm able to apply this knowledge to streamline and optimize the
+            software development and deployment process.
+          </p>
+
+          <p>
+            With a background in computer science, enginnering and software development,
+            I have a strong foundation in the principles and practices of software engineering.
+            I am skilled in a range of programming languages and technologies, including Ruby on Rails,
+            Java, and Docker, and I have experience working with a variety of platforms and frameworks,
+            including SpringBoot, Linux, AWS, and Jenkins.
+          </p>
+
+          <p>
+            When I am not working, I love taking pictures using my
+            camera or phone or i lose myself playing video games
+          </p>
+        </div>
+        <div class="services">
+
+          <h4>Skills</h4>
+          <p>Infrastructure-as-code</p>
+          <p>Virtualization and Containerization</p>
+          <p>Software Engineering</p>
+          <p>Cloud Computing</p>
+          <p>Software Architecture and Design</p>
+          <p>Enterprise Systems</p>
+          <p>Version Control (Git)</p>
+          <p>Kubernetes</p>
+
+        </div>
+        <div class="intro-image">
+
+          <div class="bio-photo">
+            <div class="bio-image-block">
+              <img src="./img/bio1.jpeg" alt="" loading="eager" srcset="" class="bio-image">
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyright &#169; 2024. Moses Odutusin | Software & DevOps Engineer. All rights reserved.</p>
+        <p>odutusinmoses@gmail.com</p>
+      </footer>
+
+
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let hasSplashScreenShown = localStorage.getItem("hasSplashScreenShown");
+      let splashScreen = document.getElementById("splash-screen");
+      let mainContent = document.getElementById("main-content");
+
+      if (hasSplashScreenShown) {
+        splashScreen.style.display = "none";
+        mainContent.style.display = "block";
+        return
+      }
+
+      setTimeout(function () {
+        splashScreen.style.display = "none";
+        mainContent.style.display = "block";
+        localStorage.setItem("hasSplashScreenShown", true);
+      }, 2500);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
