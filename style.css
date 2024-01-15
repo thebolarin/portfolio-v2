@@ -150,7 +150,6 @@ a.focus:visited {
     transform: rotate(5deg) translateY(50%);
     transform-origin: 0 0;
     transition: box-shadow 0.5s ease, transform 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: -webkit-box-shadow 0.5s ease, -webkit-transform 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .bio-photo {
