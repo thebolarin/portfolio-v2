@@ -93,7 +93,8 @@
                           <input placeholder="Subject" type="text" tabindex="3" required>
                         </fieldset>
                         <fieldset>
-                          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                          <textarea id="message" placeholder="Type your message here (up to 500 characters)...." tabindex="5" rows="4" maxlength="500" required></textarea>
+                          <div class="counter">Characters left: <span id="charCount">500</span></div>
                         </fieldset>
                         <fieldset>
                         <input type="checkbox" class="chb chb-1" id="chb-1" />
@@ -115,6 +116,12 @@
         </div>
     </main>
     <script src="./script.js"></script>
+    <script>
+      document.getElementById('message').addEventListener('input', function () {
+          let charCount = 500 - this.value.length;
+          document.getElementById('charCount').textContent = charCount;
+      });
+  </script>
 </body>
 
 </html>

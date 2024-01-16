@@ -156,10 +156,16 @@ fieldset {
 
   font-size: 13px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .chb-1:checked+label::before {
   color: #668A85;
   content: '\2713';
+}
+
+.contact-form .counter{
+  font-size: 13px;
+  font-weight:700;
+  color: #668A85;
 }
